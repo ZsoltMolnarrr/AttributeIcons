@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:docs.fabricmc.net)",
-      "WebFetch(domain:wiki.fabricmc.net)"
+      "WebFetch(domain:wiki.fabricmc.net)",
+      "WebSearch",
+      "WebFetch(domain:maven.fabricmc.net)"
     ],
     "deny": [],
     "ask": []

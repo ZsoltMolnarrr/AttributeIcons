@@ -30,9 +30,8 @@ import java.util.LinkedHashMap;
 /// HOW TO USE
 /// 1) Delete generated sources
 /// 2) Run Minecraft from IDE (run client), enter world
-/// 3) Run datagen
-/// 4) Replace double slashes with single slashes in generated files (all)
-/// 5) Build the mod, unarchive it, copy `assets`
+/// 3) Run datagen (unicode escaping is automatically fixed by Gradle post-processing)
+/// 4) Build the mod, unarchive it, copy `assets`
 
 public class AttributeIcons implements ModInitializer {
 
@@ -92,7 +91,7 @@ public class AttributeIcons implements ModInitializer {
 
         public String characterCode() {
             var base = "\uD833\uDD00";
-            //var base = "\uF933";
+            // var base = "\uF933";
             return incrementUnicodeEscaped(base, code);
         }
 

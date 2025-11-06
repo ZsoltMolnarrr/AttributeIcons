@@ -128,3 +128,36 @@ publishing {
         // retrieving dependencies.
     }
 }
+
+// Post-process generated JSON files to fix unicode escaping
+tasks.register('postProcessDatagen') {
+    group = 'fabric'
+    description = 'Post-processes generated JSON files to replace double backslashes with single backslashes'
+
+    doLast {
+        def generatedDir = file('src/main/generated')
+        if (!generatedDir.exists()) {
+            println "Generated directory does not exist, skipping post-processing"
+            return
+        }
+
+        def processedCount = 0
+        generatedDir.eachFileRecurse { file ->
+            if (file.name.endsWith('.json')) {
+                def content = file.text
+                def modified = content.replace('\\\\u', '\\u')
+                if (content != modified) {
+                    file.text = modified
+                    processedCount++
+                    println "Post-processed: ${file.path}"
+                }
+            }
+        }
+        println "Post-processing complete: ${processedCount} file(s) modified"
+    }
+}
+
+// Automatically run post-processing after datagen
+tasks.named('runDatagen') {
+    finalizedBy 'postProcessDatagen'
+}
