@@ -12,11 +12,13 @@ import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Language;
+import net.more_rpg_classes.entity.attribute.MRPGCEntityAttributes;
 import net.spell_engine.api.entity.SpellEngineAttributes;
 import net.spell_power.api.SpellPowerMechanics;
 import net.spell_power.api.SpellResistance;
 import net.spell_power.api.SpellSchools;
 import net.tinyconfig.ConfigManager;
+import net.witcher_rpg.entity.attribute.WitcherAttributes;
 
 import java.io.Reader;
 import java.nio.file.Files;
@@ -171,7 +173,6 @@ public class AttributeIcons implements ModInitializer {
         add(EntityAttributes.PLAYER_BLOCK_BREAK_SPEED.getKey().get().getValue());
         add(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE.getKey().get().getValue());
         add(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE.getKey().get().getValue());
-
         CombatRoll.Attributes.all.forEach(entry -> {
             add(entry.id);
         });
@@ -195,6 +196,27 @@ public class AttributeIcons implements ModInitializer {
         SpellEngineAttributes.all.forEach(entry -> {
             add(entry.id);
         });
+
+        /// MRPG Attributes - Fichte
+        add(MRPGCEntityAttributes.AIR_FUSE_MODIFIER.getKey().get().getValue());
+        add(MRPGCEntityAttributes.ARCANE_FUSE_MODIFIER.getKey().get().getValue());
+        add(MRPGCEntityAttributes.DAMAGE_REFLECT_MODIFIER.getKey().get().getValue());
+        add(MRPGCEntityAttributes.EARTH_FUSE_MODIFIER.getKey().get().getValue());
+        add(MRPGCEntityAttributes.FIRE_FUSE_MODIFIER.getKey().get().getValue());
+        add(MRPGCEntityAttributes.FROST_FUSE_MODIFIER.getKey().get().getValue());
+        add(MRPGCEntityAttributes.HEALING_FUSE_MODIFIER.getKey().get().getValue());
+        add(MRPGCEntityAttributes.LIFESTEAL_MODIFIER.getKey().get().getValue());
+        add(MRPGCEntityAttributes.RAGE_MODIFIER.getKey().get().getValue());
+        add(MRPGCEntityAttributes.SPELL_VAMPIRE.getKey().get().getValue());
+        add(MRPGCEntityAttributes.WATER_FUSE_MODIFIER.getKey().get().getValue());
+        add(WitcherAttributes.AARD_INTENSITY.getKey().get().getValue());
+        add(WitcherAttributes.ADRENALINE_MODIFIER.getKey().get().getValue());
+        add(WitcherAttributes.AXII_INTENSITY.getKey().get().getValue());
+        add(WitcherAttributes.IGNI_INTENSITY.getKey().get().getValue());
+        add(WitcherAttributes.SIGN_INTENSITY.getKey().get().getValue());
+        add(WitcherAttributes.QUEN_INTENSITY.getKey().get().getValue());
+        add(WitcherAttributes.YRDEN_INTENSITY.getKey().get().getValue());
+
     }
 
     public static Gson gson = new GsonBuilder().setPrettyPrinting().create();
