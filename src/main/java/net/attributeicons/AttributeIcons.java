@@ -2,6 +2,7 @@ package net.attributeicons;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import net.attributeicons.client.FontContent;
 import net.combat_roll.api.CombatRoll;
 import net.critical_strike.api.CriticalStrikeAttributes;
 import net.fabric_extras.ranged_weapon.api.EntityAttributes_RangedWeapon;
@@ -17,7 +18,6 @@ import net.spell_power.api.SpellResistance;
 import net.spell_power.api.SpellSchools;
 import net.tinyconfig.ConfigManager;
 
-import javax.xml.stream.events.Characters;
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Path;

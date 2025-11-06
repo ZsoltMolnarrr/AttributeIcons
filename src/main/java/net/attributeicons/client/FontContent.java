@@ -1,4 +1,4 @@
-package net.attributeicons;
+package net.attributeicons.client;
 
 import net.minecraft.util.Identifier;
 

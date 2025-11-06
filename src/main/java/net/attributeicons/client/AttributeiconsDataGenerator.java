@@ -14,9 +14,9 @@ public class AttributeiconsDataGenerator implements DataGeneratorEntrypoint {
 
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
-        AttributeIcons.printFontExtension();
         AttributeIcons.forceLoadConfig();
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
+        pack.addProvider(FontProvider::new);
         pack.addProvider(LangeGen::new);
     }
 
