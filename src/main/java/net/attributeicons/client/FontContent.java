@@ -11,8 +11,8 @@ public class FontContent { public FontContent() { }
             return new Entry("bitmap", file, ascent, height, chars);
         }
 
-        public static Entry attributeIcon(Identifier attributeId, int code) {
-            var codeString = "\\" + "uF" + code;
+        public static Entry attributeIcon(Identifier attributeId, String codeString) {
+            // var codeString = "\\" + "uF" + code;
             return bitmap(
                     attributeId.getNamespace() + ":attribute_icon/" + attributeId.getPath() + ".png",
                     8, 9,

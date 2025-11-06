@@ -86,7 +86,7 @@ public class AttributeIcons implements ModInitializer {
 
         public String characterCode() {
             var base = "\uD833\uDD00";
-            return incrementUnicode(base, code);
+            return incrementUnicodeEscaped(base, code);
 
 //            var slash = new StringBuilder().append('\\').toString().substring(0, 1);
 //            return slash + "uF" + code;
@@ -116,6 +116,30 @@ public class AttributeIcons implements ModInitializer {
             }
 
             return new String(Character.toChars(newCodePoint));
+        }
+
+        public static String incrementUnicodeEscaped(String s, int offset) {
+            if (s == null || s.isEmpty()) return s;
+
+            // Read the first Unicode scalar (handles surrogate pair)
+            final int baseCp = s.codePointAt(0);
+            final int target = baseCp + offset;
+
+            // Validate: must be a Unicode scalar value (exclude surrogate range)
+            if (target < Character.MIN_CODE_POINT ||
+                    target > Character.MAX_CODE_POINT ||
+                    (target >= 0xD800 && target <= 0xDFFF)) {
+                throw new IllegalArgumentException(
+                        String.format("Resulting code point out of range: U+%04X", target));
+            }
+
+            // Convert target code point to UTF-16 units and emit uXXXX for each
+            char[] units = Character.toChars(target);
+            StringBuilder sb = new StringBuilder(units.length * 6);
+            for (char ch : units) {
+                sb.append(String.format("\\u%04X", (int) ch));
+            }
+            return sb.toString();
         }
 
     }
@@ -195,16 +219,6 @@ public class AttributeIcons implements ModInitializer {
             }
             translation_cache.save();
         });
-    }
-
-    public static void printFontExtension() {
-        var fontStuff = new FontContent();
-        for (Entry entry : entries) {
-            fontStuff.providers.add(FontContent.Entry.attributeIcon(entry.attributeId, entry.code));
-        }
-        var json = gson.toJson(fontStuff);
-        System.out.println("AttributeIcons font injection: ");
-        System.out.println(json);
     }
 
     public static void forceLoadConfig() {

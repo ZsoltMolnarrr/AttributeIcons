@@ -11,37 +11,42 @@ import net.minecraft.util.Identifier;
 import java.nio.file.Path;
 import java.util.concurrent.CompletableFuture;
 
-public class FontProvider implements DataProvider {
+public abstract class FontProvider implements DataProvider {
     private final FabricDataOutput output;
 
     public FontProvider(FabricDataOutput output) {
         this.output = output;
     }
 
+    public void generateFont(FontContent content) {
+        // To be implemented by subclasses
+    }
+
     @Override
     public CompletableFuture<?> run(DataWriter writer) {
-        return CompletableFuture.runAsync(() -> {
-            try {
-                // Generate font content
-                var fontContent = new FontContent();
-                for (AttributeIcons.Entry entry : AttributeIcons.entries) {
-                    fontContent.providers.add(FontContent.Entry.attributeIcon(entry.attributeId(), entry.code()));
-                }
+        try {
+            System.out.println("FontProvider: Starting generation with " + AttributeIcons.entries.size() + " entries");
 
-                // Convert to JSON
-                JsonElement json = AttributeIcons.gson.toJsonTree(fontContent);
+            // Generate font content
+            var fontContent = new FontContent();
+            this.generateFont(fontContent);
 
-                // Write to assets/minecraft/font/default.json
-                Path path = this.output.getResolver(DataOutput.OutputType.RESOURCE_PACK, "font")
-                        .resolveJson(Identifier.ofVanilla("default"));
+            // Convert to JSON
+            JsonElement json = AttributeIcons.gson.toJsonTree(fontContent);
 
-                DataProvider.writeToPath(writer, json, path);
+            // Write to assets/minecraft/font/default.json
+            Path path = this.output.getResolver(DataOutput.OutputType.RESOURCE_PACK, "font")
+                    .resolveJson(Identifier.ofVanilla("default"));
 
-                System.out.println("Font extension generated at: " + path);
-            } catch (Exception e) {
-                throw new RuntimeException("Failed to generate font provider", e);
-            }
-        });
+            System.out.println("FontProvider: Writing to path: " + path);
+
+            return DataProvider.writeToPath(writer, json, path).thenRun(() -> {
+                System.out.println("FontProvider: Font extension successfully generated!");
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+            return CompletableFuture.failedFuture(new RuntimeException("Failed to generate font provider", e));
+        }
     }
 
     @Override
