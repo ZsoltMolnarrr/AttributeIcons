@@ -76,16 +76,51 @@ public class AttributeIcons implements ModInitializer {
             }
         }
 
+
+        /**
+         * Symbols for Legacy Computing Supplement
+         * https://en.wikipedia.org/wiki/List_of_Unicode_characters
+         *
+         * Starting from U+1CD0x 𜴀
+         */
+
         public String characterCode() {
-            var slash = new StringBuilder().append('\\').toString().substring(0, 1);
-            return slash + "uF" + code;
+            var base = "\uD833\uDD00";
+            return incrementUnicode(base, code);
+
+//            var slash = new StringBuilder().append('\\').toString().substring(0, 1);
+//            return slash + "uF" + code;
+
+//            int codePoint = code;
+//// converting to char[] pair
+//            char[] charPair = Character.toChars(codePoint);
+//// and to String, containing the character we want
+//            String symbol = new String(charPair);
+//            return symbol;
+
+
 //            char c = 0x2202;//aka 8706 in decimal. u codepoints are in hex.
 //            String s = String.valueOf(c);
 //            return s  + "F" + code;
         }
+
+        public static String incrementUnicode(String s, int offset) {
+            if (s == null || s.isEmpty()) return s;
+
+            int codePoint = s.codePointAt(0);
+            int newCodePoint = codePoint + offset;
+
+            // Validate range: must be a valid Unicode scalar value
+            if (newCodePoint < Character.MIN_CODE_POINT || newCodePoint > Character.MAX_CODE_POINT) {
+                throw new IllegalArgumentException("Resulting code point out of Unicode range: " + newCodePoint);
+            }
+
+            return new String(Character.toChars(newCodePoint));
+        }
+
     }
     public static ArrayList<Entry> entries = new ArrayList<>();
-    public static final int START_CODE = 933;
+    public static final int START_CODE = 0;
     public static Entry add(Identifier id) {
         var entry = new Entry(id, START_CODE + entries.size());
         entries.add(entry);
