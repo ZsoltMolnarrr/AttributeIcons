@@ -2,7 +2,6 @@ package net.attributeicons;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import net.attributeicons.client.FontContent;
 import net.combat_roll.api.CombatRoll;
 import net.critical_strike.api.CriticalStrikeAttributes;
 import net.fabric_extras.ranged_weapon.api.EntityAttributes_RangedWeapon;
@@ -19,6 +18,7 @@ import net.spell_power.api.SpellResistance;
 import net.spell_power.api.SpellSchools;
 import net.tinyconfig.ConfigManager;
 import net.witcher_rpg.entity.attribute.WitcherAttributes;
+import org.jetbrains.annotations.Nullable;
 
 import java.io.Reader;
 import java.nio.file.Files;
@@ -68,7 +68,10 @@ public class AttributeIcons implements ModInitializer {
             .sanitize(true)
             .build();
 
-    public record Entry(Identifier attributeId, int code) {
+    public record Entry(Identifier attributeId, int code, @Nullable String customNamespace) {
+        public Entry(Identifier attributeId, int code) {
+            this(attributeId, code, null);
+        }
         public String getTranslationKey() {
             var attribute =  Registries.ATTRIBUTE.get(attributeId);
             if (attribute != null) {
@@ -88,23 +91,9 @@ public class AttributeIcons implements ModInitializer {
          */
 
         public String characterCode() {
-            var base = "\uD833\uDD00";
+            // var base = "\uD833\uDD00";
+            var base = "\uF933";
             return incrementUnicodeEscaped(base, code);
-
-//            var slash = new StringBuilder().append('\\').toString().substring(0, 1);
-//            return slash + "uF" + code;
-
-//            int codePoint = code;
-//// converting to char[] pair
-//            char[] charPair = Character.toChars(codePoint);
-//// and to String, containing the character we want
-//            String symbol = new String(charPair);
-//            return symbol;
-
-
-//            char c = 0x2202;//aka 8706 in decimal. u codepoints are in hex.
-//            String s = String.valueOf(c);
-//            return s  + "F" + code;
         }
 
         public static String incrementUnicode(String s, int offset) {
@@ -149,13 +138,16 @@ public class AttributeIcons implements ModInitializer {
     public static ArrayList<Entry> entries = new ArrayList<>();
     public static final int START_CODE = 0;
     public static Entry add(Identifier id) {
-        var entry = new Entry(id, START_CODE + entries.size());
+        return add(id, null);
+    }
+    public static Entry add(Identifier id, String customNamespace) {
+        var entry = new Entry(id, START_CODE + entries.size(), customNamespace);
         entries.add(entry);
         return entry;
     }
 
     static {
-        add(Identifier.ofVanilla("generic.attack_range")); // Better Combat fake attribute
+        add(Identifier.ofVanilla("generic.attack_range"), "bettercombat"); // Better Combat fake attribute
         add(EntityAttributes.GENERIC_ARMOR.getKey().get().getValue());
         add(EntityAttributes.GENERIC_ARMOR_TOUGHNESS.getKey().get().getValue());
         add(EntityAttributes.GENERIC_ATTACK_DAMAGE.getKey().get().getValue());
@@ -189,8 +181,12 @@ public class AttributeIcons implements ModInitializer {
             add(entry.id);
         });
         SpellSchools.all().forEach(school -> {
-            if (school.ownsAttribute() && school.getAttributeEntry() != null) {
-                add(school.getAttributeEntry().getKey().get().getValue());
+            if (school.ownsAttribute()) {
+                if (school.getAttributeEntry() != null) {
+                    add(school.getAttributeEntry().getKey().get().getValue());
+                } else {
+                    add(school.id);
+                }
             }
         });
         SpellEngineAttributes.all.forEach(entry -> {

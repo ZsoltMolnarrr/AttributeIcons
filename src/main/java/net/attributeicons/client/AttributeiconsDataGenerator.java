@@ -27,7 +27,9 @@ public class AttributeiconsDataGenerator implements DataGeneratorEntrypoint {
 
         var scopedEntries = new HashMap<String, List<AttributeIcons.Entry>>();
         for (var entry : AttributeIcons.entries) {
-            var namespace = entry.attributeId().getNamespace();
+            var namespace = entry.customNamespace() != null
+                    ? entry.customNamespace()
+                    : entry.attributeId().getNamespace();
             scopedEntries.computeIfAbsent(namespace, k -> new ArrayList<>()).add(entry);
         }
 
