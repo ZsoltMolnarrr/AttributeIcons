@@ -29,7 +29,8 @@ import java.util.LinkedHashMap;
 /// 1) Delete generated sources
 /// 2) Run Minecraft from IDE (run client), enter world
 /// 3) Run datagen
-/// 4) Copy printed AttributeIcons font injection json to your resource pack
+/// 4) Replace double slashes with single slashes in generated files (all)
+/// 5) Build the mod, unarchive it, copy `assets`
 
 public class AttributeIcons implements ModInitializer {
 
