@@ -404,6 +404,168 @@
 			"chars": [
 				"\uF977"
 			]
+		},
+		{
+			"type": "bitmap",
+			"file": "more_rpg_classes:attribute_icon/air_fuse.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF978"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "more_rpg_classes:attribute_icon/arcane_fuse.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF979"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "more_rpg_classes:attribute_icon/damage_reflect.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF980"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "more_rpg_classes:attribute_icon/earth_fuse.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF981"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "more_rpg_classes:attribute_icon/fire_fuse.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF982"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "more_rpg_classes:attribute_icon/frost_fuse.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF983"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "more_rpg_classes:attribute_icon/healing_fuse.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF984"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "more_rpg_classes:attribute_icon/lifesteal_modifier.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF985"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "more_rpg_classes:attribute_icon/rage_modifier.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF986"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "more_rpg_classes:attribute_icon/spell_vampire.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF987"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "more_rpg_classes:attribute_icon/water_fuse.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF988"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "witcher_rpg:attribute_icon/aard_intensity.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF989"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "witcher_rpg:attribute_icon/adrenaline_modifier.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF990"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "witcher_rpg:attribute_icon/axii_intensity.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF991"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "witcher_rpg:attribute_icon/igni_intensity.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF992"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "witcher_rpg:attribute_icon/sign_intensity.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF993"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "witcher_rpg:attribute_icon/quen_intensity.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF994"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "witcher_rpg:attribute_icon/yrden_intensity.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uF995"
+			]
 		}
 	]
 }
