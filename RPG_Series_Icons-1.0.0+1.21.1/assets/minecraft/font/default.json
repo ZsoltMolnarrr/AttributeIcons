@@ -4,7 +4,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF933"
+        "\uD833\uDD00"
       ],
       "file": "minecraft:attribute_icon/generic.attack_range.png",
       "height": 9
@@ -13,7 +13,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF934"
+        "\uD833\uDD01"
       ],
       "file": "minecraft:attribute_icon/generic.armor.png",
       "height": 9
@@ -22,7 +22,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF935"
+        "\uD833\uDD02"
       ],
       "file": "minecraft:attribute_icon/generic.armor_toughness.png",
       "height": 9
@@ -31,7 +31,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF936"
+        "\uD833\uDD03"
       ],
       "file": "minecraft:attribute_icon/generic.attack_damage.png",
       "height": 9
@@ -40,7 +40,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF937"
+        "\uD833\uDD04"
       ],
       "file": "minecraft:attribute_icon/generic.attack_knockback.png",
       "height": 9
@@ -49,7 +49,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF938"
+        "\uD833\uDD05"
       ],
       "file": "minecraft:attribute_icon/generic.attack_speed.png",
       "height": 9
@@ -58,7 +58,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF939"
+        "\uD833\uDD06"
       ],
       "file": "minecraft:attribute_icon/player.sweeping_damage_ratio.png",
       "height": 9
@@ -67,7 +67,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF93A"
+        "\uD833\uDD07"
       ],
       "file": "minecraft:attribute_icon/generic.knockback_resistance.png",
       "height": 9
@@ -76,7 +76,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF93B"
+        "\uD833\uDD08"
       ],
       "file": "minecraft:attribute_icon/generic.luck.png",
       "height": 9
@@ -85,7 +85,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF93C"
+        "\uD833\uDD09"
       ],
       "file": "minecraft:attribute_icon/generic.max_health.png",
       "height": 9
@@ -94,7 +94,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF93D"
+        "\uD833\uDD0A"
       ],
       "file": "minecraft:attribute_icon/generic.movement_speed.png",
       "height": 9
@@ -103,7 +103,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF93E"
+        "\uD833\uDD0B"
       ],
       "file": "minecraft:attribute_icon/generic.jump_strength.png",
       "height": 9
@@ -112,7 +112,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF93F"
+        "\uD833\uDD0C"
       ],
       "file": "minecraft:attribute_icon/generic.gravity.png",
       "height": 9
@@ -121,7 +121,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF940"
+        "\uD833\uDD0D"
       ],
       "file": "minecraft:attribute_icon/generic.fall_damage_multiplier.png",
       "height": 9
@@ -130,7 +130,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF941"
+        "\uD833\uDD0E"
       ],
       "file": "minecraft:attribute_icon/player.mining_efficiency.png",
       "height": 9
@@ -139,7 +139,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF942"
+        "\uD833\uDD0F"
       ],
       "file": "minecraft:attribute_icon/player.block_break_speed.png",
       "height": 9
@@ -148,7 +148,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF943"
+        "\uD833\uDD10"
       ],
       "file": "minecraft:attribute_icon/player.block_interaction_range.png",
       "height": 9
@@ -157,7 +157,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF944"
+        "\uD833\uDD11"
       ],
       "file": "minecraft:attribute_icon/player.entity_interaction_range.png",
       "height": 9
@@ -166,7 +166,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF945"
+        "\uD833\uDD12"
       ],
       "file": "combat_roll:attribute_icon/distance.png",
       "height": 9
@@ -175,7 +175,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF946"
+        "\uD833\uDD13"
       ],
       "file": "combat_roll:attribute_icon/recharge.png",
       "height": 9
@@ -184,7 +184,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF947"
+        "\uD833\uDD14"
       ],
       "file": "combat_roll:attribute_icon/count.png",
       "height": 9
@@ -193,7 +193,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF948"
+        "\uD833\uDD15"
       ],
       "file": "critical_strike:attribute_icon/chance.png",
       "height": 9
@@ -202,7 +202,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF949"
+        "\uD833\uDD16"
       ],
       "file": "critical_strike:attribute_icon/damage.png",
       "height": 9
@@ -211,7 +211,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF94A"
+        "\uD833\uDD17"
       ],
       "file": "ranged_weapon:attribute_icon/damage.png",
       "height": 9
@@ -220,7 +220,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF94B"
+        "\uD833\uDD18"
       ],
       "file": "ranged_weapon:attribute_icon/pull_time.png",
       "height": 9
@@ -229,7 +229,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF94C"
+        "\uD833\uDD19"
       ],
       "file": "ranged_weapon:attribute_icon/haste.png",
       "height": 9
@@ -238,7 +238,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF94D"
+        "\uD833\uDD1A"
       ],
       "file": "ranged_weapon:attribute_icon/velocity.png",
       "height": 9
@@ -247,7 +247,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF94E"
+        "\uD833\uDD1B"
       ],
       "file": "spell_power:attribute_icon/critical_damage.png",
       "height": 9
@@ -256,7 +256,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF94F"
+        "\uD833\uDD1C"
       ],
       "file": "spell_power:attribute_icon/critical_chance.png",
       "height": 9
@@ -265,7 +265,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF950"
+        "\uD833\uDD1D"
       ],
       "file": "spell_power:attribute_icon/haste.png",
       "height": 9
@@ -274,7 +274,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF951"
+        "\uD833\uDD1E"
       ],
       "file": "spell_power:attribute_icon/resistance.generic.png",
       "height": 9
@@ -283,7 +283,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF952"
+        "\uD833\uDD1F"
       ],
       "file": "spell_power:attribute_icon/generic.png",
       "height": 9
@@ -292,7 +292,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF953"
+        "\uD833\uDD20"
       ],
       "file": "spell_power:attribute_icon/arcane.png",
       "height": 9
@@ -301,7 +301,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF954"
+        "\uD833\uDD21"
       ],
       "file": "spell_power:attribute_icon/fire.png",
       "height": 9
@@ -310,7 +310,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF955"
+        "\uD833\uDD22"
       ],
       "file": "spell_power:attribute_icon/frost.png",
       "height": 9
@@ -319,7 +319,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF956"
+        "\uD833\uDD23"
       ],
       "file": "spell_power:attribute_icon/healing.png",
       "height": 9
@@ -328,7 +328,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF957"
+        "\uD833\uDD24"
       ],
       "file": "spell_power:attribute_icon/lightning.png",
       "height": 9
@@ -337,7 +337,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF958"
+        "\uD833\uDD25"
       ],
       "file": "spell_power:attribute_icon/soul.png",
       "height": 9
@@ -346,7 +346,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF959"
+        "\uD833\uDD26"
       ],
       "file": "spell_power:attribute_icon/earth.png",
       "height": 9
@@ -355,7 +355,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF95A"
+        "\uD833\uDD27"
       ],
       "file": "spell_power:attribute_icon/water.png",
       "height": 9
@@ -364,7 +364,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF95B"
+        "\uD833\uDD28"
       ],
       "file": "spell_power:attribute_icon/air.png",
       "height": 9
@@ -373,7 +373,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF95C"
+        "\uD833\uDD29"
       ],
       "file": "spell_power:attribute_icon/nature.png",
       "height": 9
@@ -382,7 +382,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF95D"
+        "\uD833\uDD2A"
       ],
       "file": "spell_power:attribute_icon/blood.png",
       "height": 9
@@ -391,7 +391,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF95E"
+        "\uD833\uDD2B"
       ],
       "file": "spell_power:attribute_icon/unholy.png",
       "height": 9
@@ -400,7 +400,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF95F"
+        "\uD833\uDD2C"
       ],
       "file": "spell_power:attribute_icon/holy.png",
       "height": 9
@@ -409,7 +409,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF960"
+        "\uD833\uDD2D"
       ],
       "file": "spell_engine:attribute_icon/healing_taken.png",
       "height": 9
@@ -418,7 +418,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF961"
+        "\uD833\uDD2E"
       ],
       "file": "spell_engine:attribute_icon/damage_taken.png",
       "height": 9
@@ -427,7 +427,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF962"
+        "\uD833\uDD2F"
       ],
       "file": "spell_engine:attribute_icon/evasion_chance.png",
       "height": 9
@@ -436,7 +436,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF963"
+        "\uD833\uDD30"
       ],
       "file": "more_rpg_classes:attribute_icon/air_fuse_modifier.png",
       "height": 9
@@ -445,7 +445,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF964"
+        "\uD833\uDD31"
       ],
       "file": "more_rpg_classes:attribute_icon/arcane_fuse_modifier.png",
       "height": 9
@@ -454,7 +454,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF965"
+        "\uD833\uDD32"
       ],
       "file": "more_rpg_classes:attribute_icon/damage_reflect_modifier.png",
       "height": 9
@@ -463,7 +463,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF966"
+        "\uD833\uDD33"
       ],
       "file": "more_rpg_classes:attribute_icon/earth_fuse_modifier.png",
       "height": 9
@@ -472,7 +472,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF967"
+        "\uD833\uDD34"
       ],
       "file": "more_rpg_classes:attribute_icon/fire_fuse_modifier.png",
       "height": 9
@@ -481,7 +481,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF968"
+        "\uD833\uDD35"
       ],
       "file": "more_rpg_classes:attribute_icon/frost_fuse_modifier.png",
       "height": 9
@@ -490,7 +490,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF969"
+        "\uD833\uDD36"
       ],
       "file": "more_rpg_classes:attribute_icon/healing_fuse_modifier.png",
       "height": 9
@@ -499,7 +499,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF96A"
+        "\uD833\uDD37"
       ],
       "file": "more_rpg_classes:attribute_icon/lifesteal_modifier.png",
       "height": 9
@@ -508,7 +508,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF96B"
+        "\uD833\uDD38"
       ],
       "file": "more_rpg_classes:attribute_icon/rage_modifier.png",
       "height": 9
@@ -517,7 +517,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF96C"
+        "\uD833\uDD39"
       ],
       "file": "more_rpg_classes:attribute_icon/spell_vampire.png",
       "height": 9
@@ -526,7 +526,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF96D"
+        "\uD833\uDD3A"
       ],
       "file": "more_rpg_classes:attribute_icon/water_fuse_modifier.png",
       "height": 9
@@ -535,7 +535,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF96E"
+        "\uD833\uDD3B"
       ],
       "file": "witcher_rpg:attribute_icon/aard_intensity.png",
       "height": 9
@@ -544,7 +544,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF96F"
+        "\uD833\uDD3C"
       ],
       "file": "witcher_rpg:attribute_icon/adrenaline_modifier.png",
       "height": 9
@@ -553,7 +553,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF970"
+        "\uD833\uDD3D"
       ],
       "file": "witcher_rpg:attribute_icon/axii_intensity.png",
       "height": 9
@@ -562,7 +562,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF971"
+        "\uD833\uDD3E"
       ],
       "file": "witcher_rpg:attribute_icon/igni_intensity.png",
       "height": 9
@@ -571,7 +571,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF972"
+        "\uD833\uDD3F"
       ],
       "file": "witcher_rpg:attribute_icon/sign_intensity.png",
       "height": 9
@@ -580,7 +580,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF973"
+        "\uD833\uDD40"
       ],
       "file": "witcher_rpg:attribute_icon/quen_intensity.png",
       "height": 9
@@ -589,7 +589,7 @@
       "type": "bitmap",
       "ascent": 8,
       "chars": [
-        "\uF974"
+        "\uD833\uDD41"
       ],
       "file": "witcher_rpg:attribute_icon/yrden_intensity.png",
       "height": 9

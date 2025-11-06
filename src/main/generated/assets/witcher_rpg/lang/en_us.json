@@ -1,9 +1,9 @@
 {
-  "attribute.name.witcher_rpg.aard_intensity": "§f\uF96E§r Aard Sign Intensity",
-  "attribute.name.witcher_rpg.adrenaline_modifier": "§f\uF96F§r Adrenaline Gain",
-  "attribute.name.witcher_rpg.axii_intensity": "§f\uF970§r Axii Sign Intensity",
-  "attribute.name.witcher_rpg.igni_intensity": "§f\uF971§r Igni Sign Intensity",
-  "attribute.name.witcher_rpg.quen_intensity": "§f\uF973§r Quen Sign Intensity",
-  "attribute.name.witcher_rpg.sign_intensity": "§f\uF972§r Sign Intensity",
-  "attribute.name.witcher_rpg.yrden_intensity": "§f\uF974§r Yrden Sign Intensity"
+  "attribute.name.witcher_rpg.aard_intensity": "§f\uD833\uDD3B§r Aard Sign Intensity",
+  "attribute.name.witcher_rpg.adrenaline_modifier": "§f\uD833\uDD3C§r Adrenaline Gain",
+  "attribute.name.witcher_rpg.axii_intensity": "§f\uD833\uDD3D§r Axii Sign Intensity",
+  "attribute.name.witcher_rpg.igni_intensity": "§f\uD833\uDD3E§r Igni Sign Intensity",
+  "attribute.name.witcher_rpg.quen_intensity": "§f\uD833\uDD40§r Quen Sign Intensity",
+  "attribute.name.witcher_rpg.sign_intensity": "§f\uD833\uDD3F§r Sign Intensity",
+  "attribute.name.witcher_rpg.yrden_intensity": "§f\uD833\uDD41§r Yrden Sign Intensity"
 }

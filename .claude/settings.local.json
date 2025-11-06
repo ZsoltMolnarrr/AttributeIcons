@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.fabricmc.net)",
+      "WebFetch(domain:wiki.fabricmc.net)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

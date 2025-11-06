@@ -1,6 +1,6 @@
 {
-  "attribute.name.ranged_weapon.damage": "§f\uF94A§r Ranged Damage",
-  "attribute.name.ranged_weapon.haste": "§f\uF94C§r Draw Speed",
-  "attribute.name.ranged_weapon.pull_time": "§f\uF94B§r sec Pull Time",
-  "attribute.name.ranged_weapon.velocity": "§f\uF94D§r Arrow Velocity"
+  "attribute.name.ranged_weapon.damage": "§f\uD833\uDD17§r Ranged Damage",
+  "attribute.name.ranged_weapon.haste": "§f\uD833\uDD19§r Draw Speed",
+  "attribute.name.ranged_weapon.pull_time": "§f\uD833\uDD18§r sec Pull Time",
+  "attribute.name.ranged_weapon.velocity": "§f\uD833\uDD1A§r Arrow Velocity"
 }

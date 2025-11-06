@@ -91,8 +91,8 @@ public class AttributeIcons implements ModInitializer {
          */
 
         public String characterCode() {
-            // var base = "\uD833\uDD00";
-            var base = "\uF933";
+            var base = "\uD833\uDD00";
+            //var base = "\uF933";
             return incrementUnicodeEscaped(base, code);
         }
 
