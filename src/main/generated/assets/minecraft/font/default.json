@@ -348,7 +348,7 @@
       "chars": [
         "\uD833\uDD26"
       ],
-      "file": "spell_power:attribute_icon/earth.png",
+      "file": "spell_power:attribute_icon/water.png",
       "height": 9
     },
     {
@@ -357,7 +357,7 @@
       "chars": [
         "\uD833\uDD27"
       ],
-      "file": "spell_power:attribute_icon/water.png",
+      "file": "spell_power:attribute_icon/air.png",
       "height": 9
     },
     {
@@ -366,7 +366,7 @@
       "chars": [
         "\uD833\uDD28"
       ],
-      "file": "spell_power:attribute_icon/air.png",
+      "file": "spell_power:attribute_icon/earth.png",
       "height": 9
     },
     {
@@ -375,7 +375,7 @@
       "chars": [
         "\uD833\uDD29"
       ],
-      "file": "spell_power:attribute_icon/nature.png",
+      "file": "spell_power:attribute_icon/blood.png",
       "height": 9
     },
     {
@@ -384,7 +384,7 @@
       "chars": [
         "\uD833\uDD2A"
       ],
-      "file": "spell_power:attribute_icon/blood.png",
+      "file": "spell_power:attribute_icon/unholy.png",
       "height": 9
     },
     {
@@ -393,7 +393,7 @@
       "chars": [
         "\uD833\uDD2B"
       ],
-      "file": "spell_power:attribute_icon/unholy.png",
+      "file": "spell_power:attribute_icon/holy.png",
       "height": 9
     },
     {
@@ -402,7 +402,7 @@
       "chars": [
         "\uD833\uDD2C"
       ],
-      "file": "spell_power:attribute_icon/holy.png",
+      "file": "spell_power:attribute_icon/nature.png",
       "height": 9
     },
     {

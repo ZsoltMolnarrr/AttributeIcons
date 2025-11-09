@@ -1,20 +1,20 @@
 {
-  "attribute.name.spell_power.air": "§f\uD833\uDD28§r Air Spell Power",
+  "attribute.name.spell_power.air": "§f\uD833\uDD27§r Air Spell Power",
   "attribute.name.spell_power.arcane": "§f\uD833\uDD20§r Arcane Spell Power",
-  "attribute.name.spell_power.blood": "§f\uD833\uDD2A§r Blood Spell Power",
+  "attribute.name.spell_power.blood": "§f\uD833\uDD29§r Blood Spell Power",
   "attribute.name.spell_power.critical_chance": "§f\uD833\uDD1C§r Spell Critical Chance",
   "attribute.name.spell_power.critical_damage": "§f\uD833\uDD1B§r Spell Critical Damage",
-  "attribute.name.spell_power.earth": "§f\uD833\uDD26§r Earth Spell Power",
+  "attribute.name.spell_power.earth": "§f\uD833\uDD28§r Earth Spell Power",
   "attribute.name.spell_power.fire": "§f\uD833\uDD21§r Fire Spell Power",
   "attribute.name.spell_power.frost": "§f\uD833\uDD22§r Frost Spell Power",
   "attribute.name.spell_power.generic": "§f\uD833\uDD1F§r Spell Power",
   "attribute.name.spell_power.haste": "§f\uD833\uDD1D§r Spell Haste",
   "attribute.name.spell_power.healing": "§f\uD833\uDD23§r Healing Power",
-  "attribute.name.spell_power.holy": "§f\uD833\uDD2C§r Holy Spell Power",
+  "attribute.name.spell_power.holy": "§f\uD833\uDD2B§r Holy Spell Power",
   "attribute.name.spell_power.lightning": "§f\uD833\uDD24§r Lightning Spell Power",
-  "attribute.name.spell_power.nature": "§f\uD833\uDD29§r Nature Spell Power",
+  "attribute.name.spell_power.nature": "§f\uD833\uDD2C§r Nature Spell Power",
   "attribute.name.spell_power.resistance.generic": "§f\uD833\uDD1E§r Spell Resistance",
   "attribute.name.spell_power.soul": "§f\uD833\uDD25§r Soul Spell Power",
-  "attribute.name.spell_power.unholy": "§f\uD833\uDD2B§r Unholy Spell Power",
-  "attribute.name.spell_power.water": "§f\uD833\uDD27§r Water Spell Power"
+  "attribute.name.spell_power.unholy": "§f\uD833\uDD2A§r Unholy Spell Power",
+  "attribute.name.spell_power.water": "§f\uD833\uDD26§r Water Spell Power"
 }
